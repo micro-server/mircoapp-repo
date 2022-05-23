@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  web:
+    build: .
+    container_name: main-react
+    restart: always
+    volumes:
+      - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
+    expose: 
+      - 7001
+    ports: 
+      - 7001:7001
