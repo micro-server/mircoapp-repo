@@ -5,6 +5,7 @@ const { name } = require('./package');
       config.output.library = `${name}-[name]`;
       config.output.libraryTarget = 'umd';
       config.output.chunkLoadingGlobal = `webpackJsonp_${name}`; //output.jsonpFunction 已更新为 => output.chunkLoadingGlobal
+      config.output.publicPath=`/sub-react/`;
       return config;
     },
     devServer: (configFunction) => {
