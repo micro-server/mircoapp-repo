@@ -25,7 +25,7 @@ registerMicroApps([
     name: 'sub-react', // app name registered
     entry: process.env.REACT_APP_aaa,
     container: '#root',
-    activeRule: '/my-sub-react',
+    activeRule: '/child-sub-react',
   },
 ]);
 
