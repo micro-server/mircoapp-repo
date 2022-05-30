@@ -3,21 +3,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          大家注意了
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         这是主应用 main-react
-        </a>
-      </header>
+    <div >
+       <header className="App-header" onClick={()=>{window.history.pushState({},"",'/')}} >
+        <img src={logo} className="App-logo" alt="logo" width={50}/>
+        这里是基座 - 主应用
+        </header>
+     <div className='box'>
+      <ul>
+          <li onClick={()=>{window.history.pushState({},"",'/child-sub-react')}}><button>微应用 - sub-react</button></li>
+      </ul>
+      <div className="mainapp-sub">
+        {/* 子应用 */}
+        <main id="subapp-viewport"></main>
+      </div>
+     </div>
     </div>
   );
 }

@@ -23,8 +23,9 @@ reportWebVitals();
 registerMicroApps([
   {
     name: 'sub-react', // app name registered
+    // entry: '/sub-react/',
     entry: process.env.REACT_APP_aaa,
-    container: '#root',
+    container: '#subapp-viewport',
     activeRule: '/child-sub-react',
   },
 ]);
