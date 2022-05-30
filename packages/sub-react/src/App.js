@@ -1,25 +1,53 @@
+import { Routes, Route, Link } from "react-router-dom"
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          欢迎来到
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          这里是微应用 sub-react
-        </a>
-      </header>
-    </div>
+    <div className="">
+    {/* <img src={logo} className="App-logo" alt="logo" width={50}/> */}
+    <header className="">
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
+    </header>
+  </div>
+
   );
 }
+function Home() {
+  return <div>
+    <main>
+      <h2>Welcome to the home page</h2>
+    </main>
+    <nav>
+      <Link to="/about">about</Link>
+    </nav>
+  </div>
+}
+function About() {
+  return <div>
+    <main>
+      <h2>Welcome to the about page</h2>
+    </main>
+    <nav>
+      <ol>
+        <li>
+          <botton>
+            <Link to="/">home</Link>
+          </botton>
+        </li>
+        <li>
+          <botton>
+            <Link to="/about">about</Link>
+          </botton>
+        </li>
+      </ol>
+    </nav>
+  </div>
+}
+
 
 export default App;

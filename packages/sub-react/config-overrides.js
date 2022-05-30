@@ -1,4 +1,5 @@
 const { name } = require('./package');
+// const path = require('path');
 
   module.exports = {
     webpack: config => {
@@ -6,6 +7,7 @@ const { name } = require('./package');
       config.output.libraryTarget = 'umd';
       config.output.chunkLoadingGlobal = `webpackJsonp_${name}`; //output.jsonpFunction 已更新为 => output.chunkLoadingGlobal
       config.output.publicPath=`/sub-react/`;
+      // config.output.path=path.resolve(__dirname, 'build/sub-react');
       return config;
     },
     devServer: (configFunction) => {

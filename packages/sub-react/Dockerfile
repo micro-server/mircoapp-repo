@@ -6,4 +6,4 @@ ADD . /code
 RUN npm run build
 
 FROM nginx:alpine
-COPY --from=builder code/build /usr/local/nginx/html/
+COPY --from=builder code/build /etc/nginx/sub/
