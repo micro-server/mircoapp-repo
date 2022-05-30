@@ -6,15 +6,12 @@ import './App.css'
 function App() {
   return (
     <div className="">
-    {/* <img src={logo} className="App-logo" alt="logo" width={50}/> */}
-    <header className="">
+      <img src={logo} className="App-logo" alt="logo" width={50}/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
-    </header>
-  </div>
-
+    </div>
   );
 }
 function Home() {

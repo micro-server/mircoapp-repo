@@ -9,7 +9,7 @@ import './index.css';
 
 function render(props) {
   const { container } = props;
-  ReactDOM.render( <BrowserRouter basename="/child-sub-react"><App /></BrowserRouter>, container ? container.querySelector('#sub-react-root') : document.querySelector('#sub-react-root'));
+  ReactDOM.render( <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/child-sub-react' : '/'}><App /></BrowserRouter>, container ? container.querySelector('#sub-react-root') : document.querySelector('#sub-react-root'));
 }
 
 if (!window.__POWERED_BY_QIANKUN__) {
