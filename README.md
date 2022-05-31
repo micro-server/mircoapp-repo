@@ -11,11 +11,13 @@ npm lerna -g
 安装所有子项目的依赖包，并把所有项目依赖文件都提升到根目录下，避免相同依赖包在不同项目安装多次
 
 ```
-yarn init or npm run init
+yarn && lerna bootstrap
 
 ```
 
 ## 启动项目
+
+./packages/下工程全部启动
 
 ```
  yarn start
@@ -23,6 +25,8 @@ yarn init or npm run init
 ```
 
 ## 打包项目
+
+./packages/下工程全部打包
 
 ```
  yarn build

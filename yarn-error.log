@@ -31,7 +31,7 @@ npm manifest:
       "packages/*"
     ],
     "scripts": {
-      "init":"lerna bootstrap --hoist",
+      "init":"yarn && lerna bootstrap --hoist",
       "start":"lerna run start",
       "build":"lerna run build",
     },
