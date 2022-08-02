@@ -7,10 +7,15 @@
     "packages/*"
   ],
   "scripts": {
-    "init":"lerna bootstrap --hoist"
+    "init":"lerna bootstrap --hoist",
+    "start":"lerna run start",
+    "start:main":"PACKAGE=main-react lerna run start",
+    "build":"lerna run build"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry":"https://npm.pkg.github.com"
+
   },
   "devDependencies": {
     "lerna": "^4.0.0"
