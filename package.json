@@ -1,0 +1,20 @@
+{
+  "name": "bl-microapp-repo",
+  "private": true,
+  "author": "Vicky",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "init":"lerna bootstrap --hoist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+  
+}
+            
