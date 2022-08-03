@@ -40,7 +40,8 @@
     "react-app-rewired": "^2.2.1"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry":"https://registry.npmjs.org/"
   },
-  "gitHead": "8e74ed64be2d5ae826c4bd0c276d4727b57d86aa"
+  "gitHead": "02e4e28e8183416a0bc0544182782a86432c0ccd"
 }
